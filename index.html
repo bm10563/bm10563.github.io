@@ -1,69 +1,12 @@
 <!DOCTYPE html>
 <html>
   <body>
- .card{-webkit-transition: transform 1.5s; /* Safari and Chrome */
- transition: transform 1.5s;
-  position:relative;
-  width:321px;
-  height:208px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); .card:hover {
-  -ms-transform: rotateY(-180deg); /* IE 9 */
-  -webkit-transform: rotateY(-180deg); /* Safari Chrome */
-  transform: rotateY(-180deg);
-}
-}
-.front{
-  position: absolute;
-  height:100%;
-  width:100%;
-  background-color: #CC3333;
-  backface-visibility: hidden;
-  color: #fff;
-  text-align: center;
-  line-height: 208px;
-  font-family: Helvetica;
-}
-.back{
-  position: absolute;
-  height:100%;
-  width:100%;
-  background-color: #999999;
-  backface-visibility: hidden;
-  
-  color: #fff;
-  text-align: center;
-  line-height: 208px;
-  font-family: Helvetica;
-  
-  /* rotating the back face of the card */
-  -ms-transform: rotateY(-180deg); /* IE 9 */
-  -webkit-transform: rotateY(-180deg); /* Safari */
-  transform: rotateY(-180deg);
-}
+ <div id="js-flip-1" class= "flip">
+   <div class ="card">
+     <div class = "face front">front</div>
+     <div class = "face back">Back</div>
+     </div>
+    </div>
 
-<div class=”card”> 
-  <!-- front of the card-->
-  <div class=”front”>
-    COME ON, HOVER OVER!
-  </div>
-  <!-- back of the card-->
-  <div class=”back”>
-    CARD FLIPPED.
-    
-    <div class="card-wrapper"> 
-  <div class=”card”> 
-    
-    <!-- front of the card-->
-    <div class=”front”>
-      COME ON, HOVER OVER!
-    </div>
-    <!-- back of the card-->
-    <div class=”back”>
-      CARD FLIPPED
-    </div>
-  </div>
-</div><!-- card end-->
-  </div>
-</div>
-  </body>
+   </body>
 </html>
